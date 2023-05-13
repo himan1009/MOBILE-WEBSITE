@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dcabbbb5dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PHONE</a></li>
+                    <li><a href="#">ACCESORIES</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="images/mobile.png" class="mobile">
+            <div id="circle">
+                <div class="features one">
+                    <img src="images/camera.png" alt="">
+                    <div>
+                        <h1>CAMERA</h1>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="features two">
+                    <img src="images/processor.png" alt="">
+                    <div>
+                        <h1>PROCESSOR</h1>
+                        <p>Snapdragon 788G</p>
+                    </div>
+                </div>
+                <div class="features three">
+                    <img src="images/display.png" alt="">
+                    <div>
+                        <h1>DISPLAY</h1>
+                        <p>6.5" Drop Notch Camera</p>
+                    </div>
+                </div>
+                <div class="features four">
+                    <img src="images/battery.png" alt="">
+                    <div>   
+                        <h1>BATTERY</h1>
+                        <p>5000MaH Lithium ion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" alt="" id="upbtn">
+            <h3>FEATURES</h3>
+            <img src="images/arrow.png" alt="" id="downbtn">
+        </div>
+
+        <div class="footer">
+            <p>Made with <i class="fa-solid fa-heart"></i> by HIMAN</p>
+        </div>
+    </div>
+
+
+    
+
+    <script>
+        var circle=document.getElementById("circle");
+        var upbtn=document.getElementById("upbtn");
+        var downbtn=document.getElementById("downbtn");
+
+        var rotatevalue=circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick=function(){
+            rotatesum=rotatevalue+"rotate(-90deg)";
+            circle.style.transform=rotatesum;
+            rotatevalue=rotatesum;
+        }
+
+        downbtn.onclick=function(){
+            rotatesum=rotatevalue+"rotate(90deg)";
+            circle.style.transform=rotatesum;
+            rotatevalue=rotatesum;
+        }
+    </script>
+</body>
+</html>
